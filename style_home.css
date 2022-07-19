@@ -1,0 +1,154 @@
+@charset "UTF-8"; 
+* { 
+  margin: 0; 
+  padding: 0; 
+
+  list-style: none; 
+
+  text-decoration: none; 
+} 
+
+body {
+	background-color: #b8e6d6; 
+}
+
+
+ 
+#wrap { 
+  width: 84%; 
+  max-width: 1280px; 
+  margin: 0 auto; 
+} 
+
+header { 
+	background: #ccffee; 
+	color: #333; 
+  padding: 50px; 
+} 
+ 
+.main-menu { 
+  background: #ccffee; 
+} 
+.main-menu ul { 
+  display: flex; 
+} 
+
+.main-menu ul li a { 
+  color: #333; 
+  display: block; 
+  padding: 10px 20px; 
+} 
+
+.main-menu ul li a:hover { 
+  background: #4dffc4; 
+} 
+
+main { 
+  display: flex; 
+} 
+ 
+section { 
+	background: white; 
+	flex: 3;
+	padding: 20px; 
+} 
+
+.bottom{
+	margin-bottom: 20px; 
+}
+ 
+article { 
+	background: #FFF; 
+	padding: 20px; 
+  margin-bottom: 20px;   
+} 
+
+.space {
+	margin: 200px; 
+}
+
+.fade,
+.fade2 {
+  width: 160px;
+  margin: 70px;
+}
+
+ 
+.row {
+  position: relative;
+}
+ 
+footer { 
+	background: #ccffee; 
+	color: #333; 
+  padding: 50px; 
+  text-align: center; 
+} 
+
+.fade2 {
+  opacity: .2;
+  transition: opacity, 1s;
+}
+
+.fade2:hover {
+  opacity: 1;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/*タブレット用*/ 
+@media all and (max-width: 1024px) { 
+ 
+  #wrap { 
+    width: 100%; 
+  } 
+ 
+} 
+ 
+/*スマホ用*/ 
+@media all and (max-width: 599px) { 
+ 
+  .main-menu ul { 
+    display: block; 
+  } 
+ 
+  .main-menu ul li { 
+    text-align: center; 
+  } 
+ 
+  main { 
+    display: block; 
+  } 
+ 
+  .sub-menu ul li { 
+    text-align: center; 
+  }  
+} 
+@media all and (min-width: 600px) { 
+
+  .main-menu ul { 
+    display: flex; 
+  } 
+ 
+  .main-menu ul li { 
+    text-align: left; 
+  } 
+
+  main { 
+    display: flex; 
+  } 
+
+  .sub-menu ul li { 
+    text-align: left; 
+  } 
+}
+
+@media all and (min-width: 1025px) { 
+  #wrap { 
+    width: 84%; 
+    max-width: 1280px; 
+  } 
+} 
